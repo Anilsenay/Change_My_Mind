@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEE"
+    android:fitsSystemWindows="true"
+    tools:context=".ProfilePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F1EEEE"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/topLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/greenBackgroundLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/profile_rectangle2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/whiteBackgroundLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_rectangle"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/profilePhoto1"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="fitCenter"
+                                                app:srcCompat="@drawable/pp1" />
+
+                                            <TextView
+                                                android:id="@+id/username1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="username"
+                                                android:textAlignment="center"
+                                                android:textColor="#437FF8" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/vsTextView"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:foregroundGravity="center"
+                                                android:gravity="center"
+                                                android:text="VS"
+                                                android:textAlignment="center"
+                                                android:textColor="#D90000"
+                                                android:textSize="42sp" />
+
+                                            <TextView
+                                                android:id="@+id/roundsTextView"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="(? Rounds)"
+                                                android:textColor="#000000" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/profilePhoto2"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_weight="1"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="fitCenter"
+                                                app:srcCompat="@drawable/pp2" />
+
+                                            <TextView
+                                                android:id="@+id/username2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="username"
+                                                android:textAlignment="center"
+                                                android:textColor="#437FF8" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="Preschool Is A Waste Of Time (Example Title)"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="3dp"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/startedTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Started: 01.01.2020"
+                                                android:textColor="#ffffff" />
+
+                                            <TextView
+                                                android:id="@+id/categoryTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Category: Education"
+                                                android:textColor="#ffffff" />
+
+                                            <TextView
+                                                android:id="@+id/statusTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Status: Open"
+                                                android:textColor="#ffffff" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/lastUpdateTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Last Update: 0 minutes before"
+                                                android:textColor="#ffffff" />
+
+                                            <TextView
+                                                android:id="@+id/RespondLimitTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="RespondLimit: 6 hours"
+                                                android:textColor="#ffffff" />
+
+                                            <TextView
+                                                android:id="@+id/expiresTextView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Expires In: 6 days 23 hours"
+                                                android:textColor="#ffffff" />
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

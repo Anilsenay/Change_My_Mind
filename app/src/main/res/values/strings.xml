@@ -15,13 +15,13 @@
     <string name="menu_send">Send</string>
 
     <string-array name="Categories">
-    <item>Education</item>
-    <item>Movies</item>
-    <item>News</item>
-    <item>Religion</item>
-    <item>Science</item>
-    <item>Technology</item>
-    <item>Society</item>
+        <item>Education</item>
+        <item>Movies</item>
+        <item>News</item>
+        <item>Religion</item>
+        <item>Science</item>
+        <item>Technology</item>
+        <item>Society</item>
     </string-array>
 
     <string-array name="Rounds">
@@ -29,5 +29,16 @@
         <item>5</item>
         <item>7</item>
         <item>10</item>
+    </string-array>
+
+    <string-array name="Sort">
+        <item>Started: New to Old</item>
+        <item>Started: Old to New</item>
+        <item>Updated: New to Old</item>
+        <item>Updated: Old to New</item>
+        <item>Votes: Most to Least</item>
+        <item>Votes: Least to Most</item>
+        <item>Popular: Most to Least</item>
+        <item>Popular: Least to Most</item>
     </string-array>
 </resources>
