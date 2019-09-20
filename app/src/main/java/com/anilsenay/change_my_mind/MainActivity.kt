@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()*/
-            val intent = Intent(applicationContext, NewDiscussion::class.java)
+            val intent = Intent(applicationContext, DiscussionPage::class.java)
             startActivity(intent)
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
