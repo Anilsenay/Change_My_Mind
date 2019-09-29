@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F1EEEE"
     android:fitsSystemWindows="true"
-    tools:context=".ProfilePage">
+    tools:context=".DiscussionPage">
 
     <LinearLayout
         android:layout_width="match_parent"
