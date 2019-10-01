@@ -1,7 +1,9 @@
 package com.anilsenay.change_my_mind
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class LoginActivity : AppCompatActivity() {
 
@@ -12,8 +14,9 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar!!.hide()
     }
 
-    fun signUp(){
-
+    fun signUp(view: View){
+        val intent = Intent(applicationContext, RegisterActivity::class.java)
+        startActivity(intent)
     }
     fun signIn(){
 

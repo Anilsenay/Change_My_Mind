@@ -10,17 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="270dp">
-
-        <ImageView
-            android:id="@+id/login_background_image"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/login_bg" />
+        tools:layout_editor_absoluteY="270dp"
+        android:background="@drawable/login_bg">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,10 +41,10 @@
 
             <EditText
                 android:id="@+id/username_editText"
-                android:layout_width="369dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="248dp"
+                android:layout_marginTop="100dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/login_edittext"
                 android:ems="10"
@@ -67,7 +58,7 @@
 
             <EditText
                 android:id="@+id/email_editText"
-                android:layout_width="369dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
@@ -84,7 +75,7 @@
 
             <EditText
                 android:id="@+id/password_editText"
-                android:layout_width="369dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
@@ -101,7 +92,7 @@
 
             <EditText
                 android:id="@+id/confirm_password_editText"
-                android:layout_width="369dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"

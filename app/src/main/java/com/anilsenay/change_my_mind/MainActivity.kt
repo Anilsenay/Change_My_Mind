@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToProfilePage(view: View){
-        val intent = Intent(applicationContext, ProfilePage::class.java)
+        val intent = Intent(applicationContext, LoginActivity::class.java)
         startActivity(intent)
     }
 }
