@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#008A77</color>
     <color name="colorAccent">#D5D4D4</color>
     <color name="listDividerColor">#56D8C5</color>
+    <color name="category_background_onclick">#81C9FF</color>
 </resources>

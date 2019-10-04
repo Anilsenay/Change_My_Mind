@@ -15,14 +15,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlin.reflect.typeOf
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private var lastClickedButtonIndex: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,5 +73,15 @@ class MainActivity : AppCompatActivity() {
     fun goToProfilePage(view: View){
         val intent = Intent(applicationContext, ProfilePage::class.java)
         startActivity(intent)
+    }
+
+    fun changeCategory(view: View){
+        var categoryName = view.getTag().toString()
+        val buttons = arrayOf(all_button, education_button, movies_button, news_button, religion_button, science_button, technology_button, society_button)
+        var categoryIndex = Integer.parseInt(categoryName)
+        buttons[lastClickedButtonIndex].setBackgroundResource(R.drawable.category_button_background)
+        buttons[categoryIndex].setBackgroundResource(R.drawable.category_btn_bg_onclick)
+        lastClickedButtonIndex = categoryIndex
+
     }
 }

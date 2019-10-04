@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "925908083020",
+    "firebase_url": "https://change-my-mind-v0.firebaseio.com",
+    "project_id": "change-my-mind-v0",
+    "storage_bucket": "change-my-mind-v0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925908083020:android:fd1248790678f25d136fe9",
+        "android_client_info": {
+          "package_name": "com.anilsenay.change_my_mind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925908083020-dnj1qsb3mmim3etijkh057i1jetba530.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anilsenay.change_my_mind",
+            "certificate_hash": "9ccbf54fe75cf640f70630298be080cb6eac1a20"
+          }
+        },
+        {
+          "client_id": "925908083020-qknn6rhni0s68111mfdi36mb4ndbqsrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUR9euGJV8J8FxKFe6KEr1TWNC20hIaWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925908083020-qknn6rhni0s68111mfdi36mb4ndbqsrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
