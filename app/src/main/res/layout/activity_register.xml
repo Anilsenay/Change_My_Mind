@@ -40,7 +40,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/username_editText"
+                android:id="@+id/reg_username_editText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
@@ -57,7 +57,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/email_editText"
+                android:id="@+id/reg_email_editText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
@@ -74,7 +74,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/password_editText"
+                android:id="@+id/reg_password_editText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
@@ -91,7 +91,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/confirm_password_editText"
+                android:id="@+id/reg_confirm_password_editText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"

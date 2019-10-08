@@ -16,6 +16,7 @@ import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.View
 import android.widget.*
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlin.reflect.typeOf
 
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private var lastClickedButtonIndex: Int = 0
+    private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +59,9 @@ class MainActivity : AppCompatActivity() {
         //Custom Menu icon
         supportActionBar?.setHomeAsUpIndicator(R.drawable.drawer_icon)
 
+        //firebase auth
+        mAuth = FirebaseAuth.getInstance()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -83,5 +88,12 @@ class MainActivity : AppCompatActivity() {
         buttons[categoryIndex].setBackgroundResource(R.drawable.category_btn_bg_onclick)
         lastClickedButtonIndex = categoryIndex
 
+    }
+
+    fun logOut(view: View){
+        mAuth.signOut()
+        val intent = Intent(applicationContext, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
