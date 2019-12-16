@@ -1,5 +1,7 @@
 # Change_My_Mind
 
+I took a break for project for a while
+
 <h3>An android debate app. My first Android app and mobile UI design.</h3>
 
 <h5>Here is UI design I worked : https://xd.adobe.com/view/2509f1ec-1bda-4b9d-4d1c-35ffb7930dd8-5338/grid?hints=off</h5>
